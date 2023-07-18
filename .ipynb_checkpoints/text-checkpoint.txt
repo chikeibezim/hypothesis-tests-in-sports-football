@@ -1,0 +1,17 @@
+Hypothesis Testing in Betting: A Case Study
+
+Say we want to place a market on goals a team could score in a game. It's logical to look at maybe the last 5 to 10 games of the team to see the number of goals they've scored and use that as a yardstick as to the number of goals they'll score in a given game, but what if we want to know if that's a normal average for the team 
+
+We can know more about a team's chances of scoring a certain average goal by conducting a hypothesis test using a value that we're interested in.
+
+For instance, we may want to assume that a team averages 2 goals per game. Now, we would like to sample some random data from past games to check if the average goals scored per game is actually 2 and the average from our sample is just a random average from a population with an average of 2 goals.
+
+First, we define our null and alternative hypotheses as well as our significance threshold
+Null: The average number of goals scored by the team per game is 2
+Alternative: The average number of goals scored by a team per game is less than 2
+Significance Threshold: 0.05
+
+SPORTS DATA
+There are many sources for getting football data. In this article, we'll be using the API provided by apifootball.com to fetch our statistics for the team that we're interested in. 
+
+Fetching our data is the first step which will be followed up by creating our dataset with parameters we're interested in and then proceeding to clean up our data before further analysis and testing. We'll also simulate the null distribution of average goals to get a sense of how our population could look like.
